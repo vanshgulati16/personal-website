@@ -1,0 +1,170 @@
+<!-- Projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Projects · Vansh Gulati</title>
+    <meta name="Description" content="I am a young and energetic professional, looking for challenging opportunities to grow my skills. My intellectual curiosity also drives me to be a lifelong learner, and so I'm seeking to connect with like-minded people to learn and grow more.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQWGXQ6RLM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SQWGXQ6RLM');
+    </script>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Vansh Gulati logo" src="images/logo.png" class="dc-logo"></a>
+                <h3 class="medium content-web">Vansh Gulati</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Home</a></h5>
+                    <h5 class="option"><a href="about.html">About</a></h5>
+                    <h5 class="option selected">Projects</h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">💻</h1>
+                <div>
+                    <h1 class="content-mobile">💻</h1>
+                    <h1 class="project-title">Projects.<br>
+                    <span class="medium">Made on my HP.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c12 main">
+        <!-- Not-bing.live -->
+        <div class="section">
+            <h2 class="project project-formclip">Not-bing.live <span class="medium"></span></h2>
+            <div class="scroll">
+            <a href="https://not-bing.live/">
+                <img alt="not-bing.live" src="images/projects/not-bing.png" class="photo">
+            </a>
+            </div>
+        </div>
+
+        <!-- Wordle clone -->
+        <div class="section">
+            <h2 class="project project-quizportal">Wordle Clone <span class="medium"></span></h2>
+            <div class="scroll">
+            <a href="https://github.com/vanshgulati16/Wordle-Clone.github.io">
+                <img alt="Wordle clone" src="images/projects/wordle.png" class="photo">
+                <!-- <img alt="Quiz Portal" src="images/projects/quiz-portal2.PNG" class="photo"> -->
+            </a>
+            </div>
+        </div>
+
+        <!-- Cloud IDE -->
+        <!-- <div class="section">
+            <h2 class="project project-cloudide">VegNonVeg UI/UX design <span class="medium"></span></h2>
+            <div class="scroll">
+            <a href="https://www.figma.com/proto/xt88ftNQkKrpm4TJOal27r/liquid?page-id=0%3A1&node-id=284%3A353&starting-point-node-id=68%3A44">
+                <img alt=" Cloud IDE" src="images/projects/cloud-ide.PNG" class="photo">
+            </a>
+            </div>
+        </div> -->
+
+        <!-- liquid -->
+        <div class="section">
+            <h2 class="project project-minimalnews">VegNonVeg UI/UX design <span class="medium"></span></h2>
+            <div class="scroll">
+            <a href="https://www.figma.com/proto/xt88ftNQkKrpm4TJOal27r/liquid?page-id=0%3A1&node-id=284%3A353&starting-point-node-id=68%3A44">
+                <img alt="vegnonveg" src="images/projects/frame 1.PNG" class="photo">
+                
+                
+            </a>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:vanshgulati16@gmail.com?subject=Hey!" target="_blank" rel="noopener"><b>vanshgualti16@gmail.com</b></a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@gulativansh16" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+                <a href="https://twitter.com/kramjam" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
+                <a href="https://github.com/vanshgulati16" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+                <a href="www.linkedin.com/in/vanshgulati16" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>
